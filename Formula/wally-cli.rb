@@ -9,6 +9,7 @@ class WallyCli < Formula
 
   depends_on "go" => :build
   depends_on "libusb" => :build
+  depends_on "pkg-config" => :build
 
   def install
     system "go build"
